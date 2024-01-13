@@ -1,0 +1,11 @@
+[package]
+name = "vptrees-py"
+version = "1.0.0-rc.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "=0.20.0", features = ["extension-module", "auto-initialize"] }
+rand = { version = "=0.7.2", features = ["small_rng"] }

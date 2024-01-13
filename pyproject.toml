@@ -1,0 +1,18 @@
+[project]
+name = "vptrees"
+version = "1.0.0-rc.0"
+authors = [{name = "Starz0r", email = ""},]
+maintainers = [{name = "Starz0r", email = ""}]
+requires-python = ">=3.9.1"
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+
+[build-system]
+requires = ["maturin==1.4.0"]
+build-backend = "maturin"
+
+[tool.maturin]
+features = ["pyo3/extension-module"]
